@@ -1,9 +1,591 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>洋食のオーニシ</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+ 
+<body data-spy="scroll" data-target="#menu" data-offset="100">
+  <div class="wrap" id="#wrapper">
+    <header class="header">
+      <div class="content-wrapper ">
+        <a>洋食のオーニシ</a>
+        <div class="shop-image">
+          <img src="../img/pizza-5352320_1920.png" alt="">
+        </div>
+        <nav class="navbar navbar-expand-sm navbar-light fixed-top">
+          <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div id="menu" class="collapse navbar-collapse ">
+            <ul class="navbar-nav">
+              <li class="navbar-item"><a href="#" class="nav-link">About us</a></li>
+              <li class="navbar-item"><a href="#menu" class="nav-link">Menu</a></li>
+              <li class="navbar-item"><a href="#news" class="nav-link">News</a></li>
+              <li class="navbar-item"><a href="#blog" class="nav-link">Blog</a></li>
+              <li class="navbar-item"><a href="#access" class="nav-link">Access</a></li>
+              <li class="navbar-item"><a href="#Contact" class="nav-link">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </header>
+    <section class="mainvisual">
+      <img id="mypic" onclick="slideshow()" src="../img/Top-image/patrick-tomasso-GXXYkSwndP4-unsplash.jpg" width="100%" height="100%">
+            <script>
+            var pics_src = new Array("../img/Top-image/patrick-tomasso-GXXYkSwndP4-unsplash.jpg","../img/Top-image/jay-wennington-N_Y88TWmGwA-unsplash copy.jpg","../img/Top-image/dan-gold-E6HjQaB7UEA-unsplash.jpg");
+            var num = -1;
+ 
+            slideshow_timer();
+ 
+            function slideshow_timer(){
+                if (num == 2){
+                    num = 0;
+                } 
+                else {
+                    num ++;
+                }
+                document.getElementById("mypic").src=pics_src[num];
+                setTimeout("slideshow_timer()",5000); 
+            }
+            </script>
+            <script>
+              var pics_src = new Array("../img/Top-image/patrick-tomasso-GXXYkSwndP4-unsplash.jpg","../img/Top-image/jay-wennington-N_Y88TWmGwA-unsplash copy.jpg","../img/Top-image/dan-gold-E6HjQaB7UEA-unsplash.jpg");
+              var num = 0;
+   
+              function slideshow(){
+                  if (num == 2) {
+                      num = 0;
+                  }
+                  else {
+                      num ++;
+                  }
+                  document.getElementById("mypic").src=pics_src[num];
+              }
+              </script>
+    </section>
+    <main>
+      <section class="greeting">
+        <div class="contents">
+          <h2 class="greeting-tittle" id="menu">Menu</h2>
+          <div class="flexbox">
+            <div class="item">
+              <img src="../img/Menu/louis-hansel-shotsoflouis-39s0TOHAGwk-unsplash.jpg" alt="item">
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../img/Menu/louis-hansel-shotsoflouis-CZiwTf4rfHY-unsplash.jpg" alt="item">
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../img/Menu/louis-hansel-shotsoflouis-dsT5LGzEuzE-unsplash.jpg" alt="item">
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../img/Menu/louis-hansel-shotsoflouis-hlSiiTZL-9I-unsplash.jpg" alt="item">
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../img/Menu/louis-hansel-shotsoflouis-ITIa5DDyGfc-unsplash.jpg" alt="item">
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <img src="../img/Menu/mak-Qo5zW7_9cGo-unsplash.jpg" alt="item">
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="greeting-tittle" id="voice">Voice</h2>
+          <div class="flexbox-voice">
+            <div class="voice">
+              <div class="text-left">
+                <img src="../img/Voice/constance-chen-dKxGVeb3F2w-unsplash.jpg" alt="voice">
+                <h3 class="voice-title">とても感動した！</h3>
+                <p class="text">
+                  感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。
+                </p>
+                <p class="name">東京都 M.Mさん（22歳）</p>
+              </div>
+            </div>
+            <div class="voice-left">
+              <div class="text-left">
+                <img src="../img/Voice/louis-hansel-shotsoflouis-P74dc9r_S1s-unsplash.jpg" alt="voice">
+                <h3 class="voice-title">とても感動した！</h3>
+                <p class="text">
+                  感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。
+                </p>
+                <p class="name">東京都 M.Mさん（22歳）</p>
+              </div>
+            </div>
+            <div class="voice">
+              <div class="text-left">
+                <img src="../img/Voice/louis-hansel-shotsoflouis-xtC0wQtt4Zo-unsplash.jpg" alt="voice">
+                <h3 class="voice-title">とても感動した！</h3>
+                <p class="text">
+                  感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。感動した理由。
+                </p>
+                <p class="name">東京都 M.Mさん（22歳）</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="greeting-tittle" id="blog">Blog</h2>
+          <div class="flexbox-blog">
+            <div class="blog">
+              <div class="text-left">
+                <img src="../img/Blog/eaters-collective-i_xVfNtQjwI-unsplash.jpg" alt="blog">
+                <button>お問い合わせ</button>
+                <p class="date">2020/1/4</p>
+                <h3 class="blog-title">タイトルタイトルタイトルタイトル</h3>
+                <p class="text">
+                  抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋...
+                </p>
+                <a href="#" class="name">＞続きを見る</a>
+              </div>
+            </div>
+            <div class="blog">
+              <div class="text-left">
+                <img src="../img/Blog/louis-hansel-shotsoflouis-2yTSVIh9V2s-unsplash.jpg" alt="blog">
+                <button>お問い合わせ</button>
+                <p class="date">2020/1/4</p>
+                <h3 class="blog-title">タイトルタイトルタイトルタイトル</h3>
+                <p class="text">
+                  抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋抜粋...
+                </p>
+                <a href="#" class="name">＞続きを見る</a>
+              </div>
+            </div>
+          </div>
+          <!--
+          <h2 class="greeting-tittle">Blog Tile</h2>
+          <div class="flexbox">
+            <div class="item">
+              <div class="label">
+                <img src="img/Blog-title/beans-1834984_1920.jpg" alt="item">
+                <span>ラベル</span>
+              </div>
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="label">
+                <img src="img9/andrey-konstantinov-VtzqmX2pLV8-unsplash.jpg" alt="item">
+                <span>ラベル</span>
+              </div>
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="label">
+                <img src="img9/andrey-konstantinov-VtzqmX2pLV8-unsplash.jpg" alt="item">
+                <span>ラベル</span>
+              </div>
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="label">
+                <img src="img9/andrey-konstantinov-VtzqmX2pLV8-unsplash.jpg" alt="item">
+                <span>ラベル</span>
+              </div>
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="label">
+                <img src="img9/andrey-konstantinov-VtzqmX2pLV8-unsplash.jpg" alt="item">
+                <span>ラベル</span>
+              </div>
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="label">
+                <img src="img9/andrey-konstantinov-VtzqmX2pLV8-unsplash.jpg" alt="item">
+                <span>ラベル</span>
+              </div>
+              <div class="text-left">
+                <h3 class="item-title">タイトルタイトル</h3>
+                <p class="text">テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+              </div>
+            </div>
+          </div>
+          <h2 class="greeting-tittle" id="price">Price</h2>
+          <div class="flexbox">
+            <div class="Price">
+              <div class="Price-left">
+                <h3>ライト</h3>
+                <div class="cost">
+                  <h3>月</h3>
+                  <h1>480</h1>
+                  <h3>円</h3>
+                </div>
+                <table>
+                  <tr>
+                    <th>サポート１</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート２</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート３</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート４</th>
+                    <td>×</td>
+                  </tr>
+                  <tr>
+                    <th>サポート５</th>
+                    <td>×</td>
+                  </tr>
+                </table>
+                <button>詳しく見る</button>
+              </div>
+            </div>
+            <div class="Price">
+              <div class="Price-left">
+                <h3>スタンダード</h3>
+                <div class="cost">
+                  <h3>月</h3>
+                  <h1>980</h1>
+                  <h3>円</h3>
+                </div>
+                <table>
+                  <tr>
+                    <th>サポート１</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート２</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート３</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート４</th>
+                    <td>×</td>
+                  </tr>
+                  <tr>
+                    <th>サポート５</th>
+                    <td>×</td>
+                  </tr>
+                </table>
+                <button>詳しく見る</button>
+              </div>
+            </div>
+            <div class="Price">
+              <div class="Price-left">
+                <h3>プロフェッショナル</h3>
+                <div class="cost">
+                  <h3>月</h3>
+                  <h1>1980</h1>
+                  <h3>円</h3>
+                </div>
+                <table>
+                  <tr>
+                    <th>サポート１</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート２</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート３</th>
+                    <td>○</td>
+                  </tr>
+                  <tr>
+                    <th>サポート４</th>
+                    <td>×</td>
+                  </tr>
+                  <tr>
+                    <th>サポート５</th>
+                    <td>×</td>
+                  </tr>
+                </table>
+                <button>詳しく見る</button>
+              </div>
+            </div>
+          </div>
+        -->
+          <div class="News-wrapper">
+            <h2 class="greeting-tittle" id="news">News</h2>
+            <ul>
+              <li>
+                <div class="flexbox"><time>2020-01-04</time><label class="label1">ラベル１</label></div><a href="#">ニュース
+                  ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース</a>
+              </li>
+              <li>
+                <div class="flexbox"><time>2020-01-04</time><label class="label2">ラベル２</label></div><a href="#">ニュース
+                  ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース</a>
+              </li>
+              <li>
+                <div class="flexbox"><time>2020-01-04</time><label class="label3">ラベル３</label></div><a href="#">ニュース
+                  ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース</a>
+              </li>
+              <li>
+                <div class="flexbox"><time>2020-01-04</time><label class="label1">ラベル１</label></div><a href="#">ニュース
+                  ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース
+                  ニュース ニュース ニュース</a>
+              </li>
+              <li>
+                <div class="flexbox"><time>2020-01-04</time><label class="label1">ラベル１</label></div><a href="#">ニュース
+                  ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース</a>
+              </li>
+            </ul>
+            <a class="more">more</a>
+          </div>
+
+          <div class="Widget-wrapper">
+            <h2 class="greeting-tittle" id="Widget">Widget</h2>
+            <div class="flexbox-Widget">
+              <div class="Widget-nav">
+                <div class="Widget-title">
+                  <h3>おしらせ</h3>
+                  <button>more...</button>
+                </div>
+                <ul>
+                  <li>
+                    <div class="flexbox"><time>2020-01-04</time><label>注目</label></div><a href="#">ニュース ニュース ニュース ニュース
+                      ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース</a>
+                  </li>
+                  <li>
+                    <div class="flexbox"><time>2020-01-04</time><label></label></div><a href="#">ニュース ニュース ニュース ニュース
+                      ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース </a>
+                  </li>
+                  <li>
+                    <div class="flexbox"><time>2020-01-04</time><label></label></div><a href="#">ニュース ニュース ニュース ニュース
+                      ニュース ニュース ニュース ニュース ニュース ニュース ニュース ニュース </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="Widget-nav">
+                <div class="Widget-blog">
+                  <h3>ブログ</h3>
+                  <button>more...</button>
+                </div>
+                <ul>
+                  <li>
+                    <div class="flexbox"><time>2020-01-04</time><label>注目</label></div><a href="#">ブログ ブログ ブログ ブログ ブログ
+                      ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ </a>
+                  </li>
+                  <li>
+                    <div class="flexbox"><time>2020-01-04</time><label></label></div><a href="#">ブログ ブログ ブログ ブログ ブログ ブログ
+                      ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ </a>
+                  </li>
+                  <li>
+                    <div class="flexbox"><time>2020-01-04</time><label></label></div><a href="#">ブログ ブログ ブログ ブログ ブログ ブログ
+                      ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ ブログ </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!--
+          <div class="Price-wrapper">
+            <h2 class="greeting-tittle" id="Price">Price</h2>
+            <div class="Price-contents">
+              <img src="img9/emma-paillex-dc0JtKJPLRc-unsplash.jpg" alt="">
+              <div class="table-content">
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>column1</th>
+                    <th>column2</th>
+                  </tr>
+                  <tr>
+                    <th>row1</th>
+                    <td>100円</td>
+                    <td>100円</td>
+                  </tr>
+                  <tr>
+                    <th>row2</th>
+                    <td>6,000円</td>
+                    <td>0円</td>
+                  </tr>
+                  <tr>
+                    <th>row3</th>
+                    <td><span>6,000円</span>
+                      <p>※今だけ半額</p>
+                    </td>
+                    <td>0円</td>
+                  </tr>
+                  <tr>
+                    <th>row4</th>
+                    <td>100円</td>
+                    <td>100円</td>
+                  </tr>
+                </table>
+                <p>※ 目安なので詳しくは<a href="#">お問い合わせ</a>ください</p>
+              </div>
+            </div>
+          </div>
+        -->
+          <div class="Time-wrapper">
+            <h2 class="greeting-tittle" id="time">Time</h2>
+            <div class="Time-content">
+              <table>
+                <tr>
+                  <th class="top">診察時間</th>
+                  <th>月</th>
+                  <th>火</th>
+                  <th>水</th>
+                  <th>木</th>
+                  <th>金</th>
+                  <th class="saturday">土</th>
+                  <th class="sunday">日</th>
+                </tr>
+                <tr>
+                  <td class="top">10:00 - 13:00</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>●</td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td class="bc top">15:00 - 18:30</td>
+                  <td class="bc">●</td>
+                  <td class="bc">●</td>
+                  <td class="bc">●</td>
+                  <td class="bc">●</td>
+                  <td class="bc">●</td>
+                  <td class="bc">-</td>
+                  <td class="bc">-</td>
+                </tr>
+                <tr>
+                  <td class="top">21:00 - 23:00</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>-</td>
+                  <td>●</td>
+                  <td>-</td>
+                  <td>-</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="Content-wrapper">
+            <h2 class="greeting-tittle" id="Content">Content</h2>
+            <div class="Content-content">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/Mls5FhtnRvw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="Access-wrapper">
+            <h2 class="greeting-tittle" id="access">Access</h2>
+            <div class="map-content">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3274.816060998668!2d134.67741661524792!3d34.83571698040001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3554e03e7e7a22dd%3A0x4078dbc2f07ea28e!2z5rSL6aOf44Gu44Kq44O844OL44K3!5e0!3m2!1sja!2sjp!4v1597897929865!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+              <div class="map-text">
+                <h3>住所<p class="address">〒670-0034 兵庫県姫路市船丘町２９０</p>
+                </h3>
+                <h3>アクセス<p class="access">姫路駅から車で5分</p>
+                </h3>
+              </div>
+              <button class="button">Googleマップを見る<i class="fas fa-angle-right"></i></button>
+            </div>
+          </div>
+          <div class="Contact-wrapper">
+            <h2 class="greeting-tittle" id="Contact">Contact</h2>
+            <div class="google-form">
+              <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScD6V4NAxpN1sEDVhzNfPq6Y2yPckFVgqiGTgd7jvJtyh9ZMQ/viewform?embedded=true" width="800" height="673" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer>
+      <div class="footer">
+        <div class="footer-wrapper">
+          <div class="footer-address">
+            <h1 class="logo-img">
+              <a href="#">洋食のオーニシ</a>
+              <img src="../img/pizza-5352320_1920.png" alt="">
+            </h1>
+            <h2>住所:〒670-0034 兵庫県姫路市船丘町２９０</h2>
+            <h2>TEL：079-291-3885</h2>
+          </div>
+          <div class="footer-nav">
+            <ul>
+              <li>Card</li>
+              <li>Voice</li>
+              <li>blog</li>
+              <li>Price</li>
+              <li>News</li>
+              <li>Widget</li>
+              <li>Price</li>
+              <li>Time</li>
+              <li>Content</li>
+              <li>Access</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          <div class="color">
+            <img src="img9/twitter.png" alt="">
+            <img src="img9/facebook.png" alt="">
+            <img src="img9/instagram.png" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <h2>Copyright:&copy;2020 All right reserved</h2>
+          <a href="#"><img src="img9/totop.png" alt=""></a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+    integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
